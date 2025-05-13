@@ -1,0 +1,40 @@
+#!/bin/bash
+# mise description="Add commit message up to `origin/master` to CHANGELOG.md"
+
+TODAY=$(date "+%Y.%m.%d")
+RESULT_FILE="CHANGELOG.md"
+LATEST_GIT_TAG=$(git tag | head -n 1)
+GIT_LOG=$(git log "$LATEST_GIT_TAG..HEAD" --pretty=format:"%B")
+
+function generate_changelog() {
+    echo "## [v$TODAY]"
+    echo ""
+    echo "$GIT_LOG" |
+        # Remove renovate commit
+        sed -e 's/.*chore(deps): update dependency.*//g' |
+        # Remove blank line
+        sed -e '/^$/d' |
+        # Make list
+        sed -e 's/^/- /g'
+    echo ""
+    echo "### Added - 新機能について"
+    echo ""
+    echo "なし"
+    echo ""
+    echo "### Changed - 既存機能の変更について"
+    echo ""
+    echo "なし"
+    echo ""
+    echo "### Removed - 今回で削除された機能について"
+    echo ""
+    echo "なし"
+    echo ""
+    echo "### Fixed - 不具合修正について"
+    echo ""
+    echo "なし"
+    echo ""
+}
+
+generate_changelog >>$RESULT_FILE
+
+# vim:ft=bash

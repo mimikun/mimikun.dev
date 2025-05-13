@@ -1,0 +1,24 @@
+#!/bin/bash
+# mise description="Run empty-commits"
+# mise alias=["empty-commits", "emptycommits"]
+
+LATEST_GIT_TAG=$(git tag | head -n 1)
+GIT_LOG=$(git log "$LATEST_GIT_TAG..HEAD" --pretty=format:"%B")
+
+function count_commits(){
+    echo "$GIT_LOG" |
+        # Remove blank line
+        sed -e '/^$/d' |
+        # Remove renovate's commit message
+        sed -e 's/.*chore(deps): update dependency.*//g' |
+        # Remove blank line
+        sed -e '/^$/d' |
+        # count
+        wc -l
+}
+
+for i in $(seq 1 $(count_commits)); do
+    git commit -nm "wip" --allow-empty
+done
+
+# vim:ft=bash

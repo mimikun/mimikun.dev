@@ -1,0 +1,9 @@
+[tasks.test]
+description = "Lint all"
+alias = "lint"
+depends = ["lint:*"]
+
+[tasks.format]
+description = "Format all"
+alias = "fmt"
+depends = ["format:*"]

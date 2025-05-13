@@ -1,0 +1,7 @@
+#!/bin/bash
+# mise description="Lint with ESLint"
+# mise hide=true
+
+pnpm run lint
+
+# vim:ft=bash

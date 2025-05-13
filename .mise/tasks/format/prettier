@@ -1,0 +1,7 @@
+#!/bin/bash
+# mise description="Format codes with Prettier"
+# mise hide=true
+
+pnpm run format
+
+# vim:ft=bash
