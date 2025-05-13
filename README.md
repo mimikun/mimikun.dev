@@ -3,10 +3,14 @@
 ## TODO
 
 - [ ] Read the docs
-	- Configuration - [markdown](src/data/blog/how-to-configure-astropaper-theme.md)
-	- Add Posts - [markdown](src/data/blog/adding-new-post.md)
-	- Customize Color Schemes - [markdown](src/data/blog/customizing-astropaper-theme-color-schemes.md)
-	- Predefined Color Schemes - [markdown](src/data/blog/predefined-color-schemes.md)
+    - Configuration - [markdown](src/data/blog/how-to-configure-astropaper-theme.md)
+    - Add Posts - [markdown](src/data/blog/adding-new-post.md)
+    - Customize Color Schemes - [markdown](src/data/blog/customizing-astropaper-theme-color-schemes.md)
+    - Predefined Color Schemes - [markdown](src/data/blog/predefined-color-schemes.md)
+- [ ] icon customize
+    - [ ] favicon
+    - [ ] Mastodon logo
+    - [ ] zenn logo
 
 ## Structure
 
