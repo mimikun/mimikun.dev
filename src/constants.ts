@@ -1,75 +1,69 @@
-import IconMail from "@/assets/icons/IconMail.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
-import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
-import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
-import IconFacebook from "@/assets/icons/IconFacebook.svg";
-import IconTelegram from "@/assets/icons/IconTelegram.svg";
-import IconPinterest from "@/assets/icons/IconPinterest.svg";
 import { SITE } from "@/config";
 
 export const SOCIALS = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: ` ${SITE.title} on Github`,
+    href: "https://github.com/mimikun",
+    linkTitle: ` ${SITE.author} on Github`,
     icon: IconGitHub,
   },
+  // TODO: it
   {
-    name: "X",
-    href: "https://x.com/username",
-    linkTitle: `${SITE.title} on X`,
+    name: "Mastodon",
+    href: "https://mstdn.mimikun.jp/@mimikun",
+    linkTitle: ` ${SITE.author} on Mastodon`,
+    icon: IconBrandX,
+  },
+  // TODO: it
+  {
+    name: "Bluesky",
+    href: "https://bsky.app/profile/mimikun.mimikun.jp",
+    linkTitle: ` ${SITE.author} on Bluesky`,
+    icon: IconBrandX,
+  },
+  // TODO: it
+  {
+    name: "Zenn",
+    href: "https://zenn.dev/mimikun",
+    linkTitle: `${SITE.author} on Zenn`,
     icon: IconBrandX,
   },
   {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/username/",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    icon: IconLinkedin,
-  },
-  {
-    name: "Mail",
-    href: "mailto:yourmail@gmail.com",
-    linkTitle: `Send an email to ${SITE.title}`,
-    icon: IconMail,
+    name: "X",
+    href: "https://x.com/mimikun_Dev",
+    linkTitle: `${SITE.author} on X`,
+    icon: IconBrandX,
   },
 ] as const;
 
 export const SHARE_LINKS = [
-  {
-    name: "WhatsApp",
-    href: "https://wa.me/?text=",
-    linkTitle: `Share this post via WhatsApp`,
-    icon: IconWhatsapp,
-  },
-  {
-    name: "Facebook",
-    href: "https://www.facebook.com/sharer.php?u=",
-    linkTitle: `Share this post on Facebook`,
-    icon: IconFacebook,
-  },
   {
     name: "X",
     href: "https://x.com/intent/post?url=",
     linkTitle: `Share this post on X`,
     icon: IconBrandX,
   },
+  // TODO: it
   {
-    name: "Telegram",
-    href: "https://t.me/share/url?url=",
-    linkTitle: `Share this post via Telegram`,
-    icon: IconTelegram,
+    name: "Mastoshare",
+    href: "https://x.com/intent/post?url=",
+    linkTitle: `Share this post on Mastoshare`,
+    icon: IconBrandX,
   },
+  // TODO: it
   {
-    name: "Pinterest",
-    href: "https://pinterest.com/pin/create/button/?url=",
-    linkTitle: `Share this post on Pinterest`,
-    icon: IconPinterest,
+    name: "Misskeyshare",
+    href: "https://x.com/intent/post?url=",
+    linkTitle: `Share this post on Misskeyshare`,
+    icon: IconBrandX,
   },
+  // TODO: it
   {
-    name: "Mail",
-    href: "mailto:?subject=See%20this%20post&body=",
-    linkTitle: `Share this post via email`,
-    icon: IconMail,
+    name: "Blueskyshare",
+    href: "https://x.com/intent/post?url=",
+    linkTitle: `Share this post on Blueskyshare`,
+    icon: IconBrandX,
   },
 ] as const;
