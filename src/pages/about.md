@@ -3,34 +3,44 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+## 自己紹介
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+先天性の聴覚障害です。
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+この性質上、音声によるコミュニケーションは不得意なので、主に文字によるコミュニケーションをしています。
 
-<div>
-  <img src="/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
+## 好きなもの
 
-## Tech Stack
+- dotfilesいじり
+- ゲーム
+- 旅行
+- ラーメン
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+## 個人で使っている/やったことのあること
 
-## Features
+- ConoHa VPS, Amazon S3を使用してMastodonサーバを構築、運用
+    - 現在まで継続中
+- Amazon Lightsailを使用してwritefreelyサーバを構築、運用
+    - 今は閉じました
+- dotfiles盆栽
+    - 様々な環境に応じて細かく設定
+    - Neovim設定
+        - Lua
+- Nagoya.vim 開催
+    - 以前別な方がやっていたものを引き継いで開催しています
+    - 月1回ペースで継続中
 
-Here are certain features of this site.
+## 会社で使っている/やったことのあること
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+- 顧客向けWebサイト作成
+    - HTML, CSS, jQuery
+- 業務効率化ツール作成
+    - ツール1
+        - JSONファイルを読み取って加工し特定のテンプレートに沿った文章にする
+        - Python, のちにRust
+    - ツール2
+        - Excelファイルをツール1で読み込める形式のJSONファイルに変換する
+        - Bash script, のちにdeno(TypeScript)
+    - ツール3
+        - レジストリ情報の確認をする
+        - PowerShell v5ベース
