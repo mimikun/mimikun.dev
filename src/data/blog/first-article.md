@@ -1,17 +1,14 @@
 ---
-pubDatetime: 2022-09-23T15:22:00Z
-modDatetime: 2025-03-22T06:25:46.734Z
+pubDatetime: 2025-05-24T15:22:00Z
+modDatetime: 2025-05-24T06:25:46.734Z
 title: そろそろブログの一つでも持ちたかった
 featured: false
-draft: true
+draft: false
 tags:
   - article
 description:
   ― 3代目ブログ、爆誕 ―
 ---
-
-
-Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
 
 ## Table of contents
 
@@ -49,3 +46,8 @@ writefreelyで作成。
 
 UI/UXが独特すぎたのでやめた。
 
+### 三代目ブログ
+
+Astroで作成。
+
+どうなるかはまだわからない。
