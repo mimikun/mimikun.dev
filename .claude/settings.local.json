@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm add:*)",
+      "WebFetch(domain:docs.deno.com)"
+    ]
+  },
+  "enableAllProjectMcpServers": false
+}
