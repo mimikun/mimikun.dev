@@ -12,6 +12,8 @@ description:
 
 ## Table of contents
 
+## はじめに
+
 この記事はAIが書いています。
 
 ## 背景
