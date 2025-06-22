@@ -77,14 +77,23 @@ export default async () => {
                           {
                             type: "p",
                             props: {
-                              style: { fontSize: 72, fontWeight: "bold", fontFamily: '"BIZ UDGothic", "IBM Plex Mono", sans-serif' },
+                              style: {
+                                fontSize: 72,
+                                fontWeight: "bold",
+                                fontFamily:
+                                  '"BIZ UDGothic", "IBM Plex Mono", sans-serif',
+                              },
                               children: SITE.title,
                             },
                           },
                           {
                             type: "p",
                             props: {
-                              style: { fontSize: 28, fontFamily: '"BIZ UDGothic", "IBM Plex Mono", sans-serif' },
+                              style: {
+                                fontSize: 28,
+                                fontFamily:
+                                  '"BIZ UDGothic", "IBM Plex Mono", sans-serif',
+                              },
                               children: SITE.desc,
                             },
                           },
@@ -100,7 +109,8 @@ export default async () => {
                           width: "100%",
                           marginBottom: "8px",
                           fontSize: 28,
-                          fontFamily: '"BIZ UDGothic", "IBM Plex Mono", sans-serif',
+                          fontFamily:
+                            '"BIZ UDGothic", "IBM Plex Mono", sans-serif',
                         },
                         children: {
                           type: "span",

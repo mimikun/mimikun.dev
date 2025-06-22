@@ -36,36 +36,38 @@ async function loadGoogleFonts(
 > {
   // 日本語文字を含むかどうかをチェック
   const hasJapanese = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(text);
-  
-  const fontsConfig = hasJapanese ? [
-    // 日本語対応フォント
-    {
-      name: "BIZ UDGothic",
-      font: "BIZ+UDGothic",
-      weight: 400,
-      style: "normal",
-    },
-    {
-      name: "BIZ UDGothic",
-      font: "BIZ+UDGothic",
-      weight: 700,
-      style: "bold",
-    },
-  ] : [
-    // 英語フォント
-    {
-      name: "IBM Plex Mono",
-      font: "IBM+Plex+Mono",
-      weight: 400,
-      style: "normal",
-    },
-    {
-      name: "IBM Plex Mono",
-      font: "IBM+Plex+Mono",
-      weight: 700,
-      style: "bold",
-    },
-  ];
+
+  const fontsConfig = hasJapanese
+    ? [
+        // 日本語対応フォント
+        {
+          name: "BIZ UDGothic",
+          font: "BIZ+UDGothic",
+          weight: 400,
+          style: "normal",
+        },
+        {
+          name: "BIZ UDGothic",
+          font: "BIZ+UDGothic",
+          weight: 700,
+          style: "bold",
+        },
+      ]
+    : [
+        // 英語フォント
+        {
+          name: "IBM Plex Mono",
+          font: "IBM+Plex+Mono",
+          weight: 400,
+          style: "normal",
+        },
+        {
+          name: "IBM Plex Mono",
+          font: "IBM+Plex+Mono",
+          weight: 700,
+          style: "bold",
+        },
+      ];
 
   const fonts = await Promise.all(
     fontsConfig.map(async ({ name, font, weight, style }) => {

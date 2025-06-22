@@ -159,7 +159,8 @@ export default async post => {
                           fontWeight: "bold",
                           maxHeight: "84%",
                           overflow: "hidden",
-                          fontFamily: '"BIZ UDGothic", "IBM Plex Mono", sans-serif',
+                          fontFamily:
+                            '"BIZ UDGothic", "IBM Plex Mono", sans-serif',
                         },
                         children: post.data.title,
                       },
@@ -173,7 +174,8 @@ export default async post => {
                           width: "100%",
                           marginBottom: "8px",
                           fontSize: 28,
-                          fontFamily: '"BIZ UDGothic", "IBM Plex Mono", sans-serif',
+                          fontFamily:
+                            '"BIZ UDGothic", "IBM Plex Mono", sans-serif',
                         },
                         children: [
                           {
