@@ -11,4 +11,8 @@
 !package.json
 !.prettierrc
 !eslint.config.js
-!README.md
+
+# Additional ignores
+README.md
+src/data/blog/*.md
+src/pages/*.md
