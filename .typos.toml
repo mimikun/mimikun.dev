@@ -2,4 +2,6 @@
 
 [files]
 extend-exclude = [
+  # error: `manualy` should be `manually`
+  "src/data/blog/2025-06-13-diary.md",
 ]
