@@ -12,8 +12,6 @@ description:
   fish shellのプラグインマネージャを変えた
 ---
 
-## Table of contents
-
 今までは [fisher](https://github.com/jorgebucaran/fisher) を使っていましたが, [アップデートスクリプト](https://github.com/mimikun/mimikun.sh/blob/abc4e57916c5e378c9bb377a7b4d78e3a583e230/src/update/various.sh#L200) 内で `fisher update` を実行するのはちょっと大変でした.
 
 bashからfishを `fish -c` で呼び出す形式だったのもあるし. なぜか毎回 `重複が発生している. 削除してから実行してほしい` (意訳) と出てきていました.
