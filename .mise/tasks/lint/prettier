@@ -1,6 +1,6 @@
 #!/bin/bash
-# mise description="Format codes with Prettier"
-# mise hide=true
+#MISE description="Format codes with Prettier"
+#MISE hide=true
 
 pnpm run format
 # Check code format with Prettier

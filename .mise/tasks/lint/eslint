@@ -1,6 +1,6 @@
 #!/bin/bash
-# mise description="Lint with ESLint"
-# mise hide=true
+#MISE description="Lint with ESLint"
+#MISE hide=true
 
 pnpm run lint
 
