@@ -19,5 +19,32 @@ description:
 
 を元にClaude Codeでまとめてもらって作りました
 
+更新に必要なファイルをまとめたリポジトリ作ってそこで作業してました。
+
+それ自体は公開できないので非公開です、すいません
+
 ただAI任せだと変なものが出来上がるだけなので、後で自分の言葉で書き直す予定です
+
+実際、いまの段階では構成も整ってないので、いまいちかなあとおもいます
+
+https://github.com/mimikun/mimikun/blob/add-resume/RESUME.md
+
+### AIエージェント用ファイル作成。
+
+- nvim-new: あたらしいNeovim設定
+- 職務経歴書の作成
+
+両方とも
+
+```md
+summary this project
+/init
+```
+
+して生成しただけ、です
+
+https://github.com/mimikun/nvim-new/blob/master/AGENTS.md
+https://github.com/mimikun/nvim-new/blob/master/CLAUDE.md
+
+https://github.com/mimikun/mimikun/blob/add-resume/AGENTS.md
 
