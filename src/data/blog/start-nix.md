@@ -65,3 +65,14 @@ nix-env --install --attr devenv -f https://github.com/NixOS/nixpkgs/tarball/nixp
 docker-composeと似たような感じでDBを起動することもできる。開発環境に便利なのだろうとおもった。
 
 ### 個人ツール管理: [nix profile]
+
+これも本に書いてあるとおり実施するとエラーが出る。
+
+```
+❯ nix profile add nixpkgs#ripgrep
+error: 'add' is not a recognised command
+Try 'nix --help' for more information.
+```
+
+
+
