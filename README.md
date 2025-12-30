@@ -50,3 +50,10 @@ All blog posts are stored in `src/data/blog` directory.
 ## Note
 
 DO NOT RUN `pnpm up` !
+
+## Thanks
+
+- My friends
+- [tools/blog_evaluation](https://github.com/nwiizo/workspace_2026/tree/9b4592d6d2726f482045b634a16c29ecb70a31b9/tools/blog_evaluation): using a part of AI review process
+    - [LICENSE](https://github.com/nwiizo/workspace_2026/blob/9b4592d6d2726f482045b634a16c29ecb70a31b9/LICENSE)
+
