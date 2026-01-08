@@ -62,9 +62,11 @@ dotfilesリニューアルプロジェクトの一環。
 ## 設定ファイル内で環境変数が使える
 
 `settings.json` と `gemini-extension.json` ファイルでは
+
 `$VAR_NAME` or `${VAR_NAME}` 形式で環境変数が使える。これらはいいかんじにロードして参照してくれる。
 
 つまりはJSON内部でこう書けばAPIキーを解決してくれる。直接書かなくていいので安全。
+
 `.env` に書いてもいい。
 
 ```json
@@ -1485,37 +1487,9 @@ sandbox image:
 BUILD_SANDBOX=1 gemini -s
 ```
 
-## Usage statistics
+## 使用統計
 
-To help us improve the Gemini CLI, we collect anonymized usage statistics. This
-data helps us understand how the CLI is used, identify common issues, and
-prioritize new features.
-
-**What we collect:**
-
-- **Tool calls:** We log the names of the tools that are called, whether they
-  succeed or fail, and how long they take to execute. We do not collect the
-  arguments passed to the tools or any data returned by them.
-- **API requests:** We log the Gemini model used for each request, the duration
-  of the request, and whether it was successful. We do not collect the content
-  of the prompts or responses.
-- **Session information:** We collect information about the configuration of the
-  CLI, such as the enabled tools and the approval mode.
-
-**What we DON'T collect:**
-
-- **Personally identifiable information (PII):** We do not collect any personal
-  information, such as your name, email address, or API keys.
-- **Prompt and response content:** We do not log the content of your prompts or
-  the responses from the Gemini model.
-- **File content:** We do not log the content of any files that are read or
-  written by the CLI.
-
-**How to opt out:**
-
-You can opt out of usage statistics collection at any time by setting the
-`usageStatisticsEnabled` property to `false` under the `privacy` category in
-your `settings.json` file:
+以下のように書くことでオプトアウトできる
 
 ```json
 {
@@ -1525,13 +1499,31 @@ your `settings.json` file:
 }
 ```
 
-## schema-store.nvim 用スキーマ定義ファイルのURL
+ただ、個人で使うときは `true` にして、会社や組織で使うときは `false` にしたい
+
+`chezmoi` のテンプレートを使うとこうなるがJSONとは致命的に相性が悪いのでとても不恰好
+
+```json
+{
+  "privacy": {
+// 会社PCであることを示すバイナリを実行できるかチェックしている
+// バイナリ自体はとても小さなもの
+{{ if (isExecutable "/usr/local/bin/this_is_work_pc") -}}
+    "usageStatisticsEnabled": false
+{{ else -}}
+    "usageStatisticsEnabled": true
+{{ end -}}
+  }
+}
+```
+
+## スキーマ定義ファイルのURL
 
 ```md
 https://raw.githubusercontent.com/google-gemini/gemini-cli/main/schemas/settings.schema.json
 ```
 
-## source
+## ソース
 
 https://geminicli.com/docs/get-started/configuration/
 
