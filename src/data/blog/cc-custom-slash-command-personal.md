@@ -7,7 +7,7 @@ draft: true
 tags:
   - tech
 description:
-  内容は秒で陳腐化するけど仕方ない！毎秒アップデートせよ！
+  一瞬で陳腐化するけど仕方ない！都度アップデートせよ！
 ---
 
 ## Table of contents
@@ -35,11 +35,13 @@ description:
 
 なので、いくつか作って入れていく。汎用性のあるものが望ましい。
 
+- アスキーアート表示
+    - 下らんアスキーアートを表示させたい
+    - ついでにクリップボードにコピー
 - 日報作成支援
     - [Claude CodeのSlash Commandsで日報を作成する - じゃあ、おうちで学べる](https://syu-m-5151.hatenablog.com/entry/2025/06/26/220245) を参考にした
 - 日本語翻訳
     - 英語読めないので必要
 - Neovim Plugin Scaffolding 支援
     - Neovimプラグインの設定をするときに使いたい
-
 
